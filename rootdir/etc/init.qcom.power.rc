@@ -111,7 +111,6 @@ on enable-low-power
     write /sys/class/devfreq/qcom,mincpubw.35/governor "cpufreq"
 
     rm /data/system/perfd/default_values
-    start perfd
 
 on property:sys.boot_completed=1
     trigger enable-low-power
